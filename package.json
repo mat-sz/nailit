@@ -1,6 +1,6 @@
 {
   "name": "nailit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Asynchronous thumbnail generation on the client-side.",
   "main": "./lib/index.js",
   "keywords": [
