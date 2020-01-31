@@ -4,9 +4,11 @@ Easily generate thumbnails on the client-side. Works well with React.
 
 ## Why?
 
-* To reduce server load.
-* To allow client-side encryption of the thumbnails (in case of a secure file storage system).
-* To create thumbnails inside of an Electron app.
+Client-side thumbnail generation:
+
+* reduces server load - image processing being typically one of the most CPU expensive tasks in image storage systems,
+* allows for end to end encryption of thumbnails along with the original images, 
+* allows for easy usage within Electron without relying on external tools like Imagemagick.
 
 ## Usage
 
@@ -23,7 +25,7 @@ nailIt(imageUrl, maxSize, cover, outputType, outputQuality, outputBlob)
 | outputQuality | 0.7           | Smaller values result in smaller file sizes. |
 | outputBlob    | false         | When set to true the function will resolve with a Blob containing the thumbnail, otherwise it'll resolve with a data URI. |
 
-The function returns either a Blob or a data URI based on the `outputBlob` argument.
+The function returns a promise that resolves to either a Blob or a data URI based on the `outputBlob` argument.
 
 ## Installation
 
