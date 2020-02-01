@@ -1,9 +1,9 @@
 {
   "name": "nailit",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Asynchronous thumbnail generation on the client-side.",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "keywords": [
     "thumbnail",
     "react",
