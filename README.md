@@ -1,6 +1,6 @@
 # nailIt
 
-Easily generate thumbnails on the client-side. Works well with React.
+Easily generate thumbnails on the client-side. Works well with React. TypeScript is supported.
 
 ## Why?
 

@@ -1,6 +1,6 @@
 {
   "name": "nailit",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Asynchronous thumbnail generation on the client-side.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -8,8 +8,13 @@
     "thumbnail",
     "react",
     "front-end",
-    "image"
+    "image",
+    "typescript"
   ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mat-sz/nailit.git"
@@ -19,5 +24,8 @@
   },
   "homepage": "https://github.com/mat-sz/nailit",
   "author": "mat-sz <contact@matsz.dev>",
-  "license": "BSD-3-Clause-Clear"
+  "license": "BSD-3-Clause-Clear",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
 }
