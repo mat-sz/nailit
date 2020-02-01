@@ -13,19 +13,25 @@ Client-side thumbnail generation:
 ## Usage
 
 ```js
-nailIt(imageUrl, maxSize, cover, outputType, outputQuality, outputBlob)
+nailIt(imageUrl, options, outputBlob)
 ```
 
 | Argument      | Default value | Description                                                            |
 |---------------|---------------|------------------------------------------------------------------------|
 | imageUrl      | None          | An URL to the image, can't come from a foreign origin without CORS.    |
+| options       | {}            | See **Options** below. |
+| outputBlob    | false         | When set to true the function will resolve with a Blob containing the thumbnail, otherwise it'll resolve with a data URI. |
+
+The function returns a promise that resolves to either a Blob or a data URI based on the `outputBlob` argument.
+
+### Options
+
+| Argument      | Default value | Description                                                            |
+|---------------|---------------|------------------------------------------------------------------------|
 | maxSize       | 250           | Maximum width or height. The image will be resized to have both width and height be less or equal to this value. |
 | cover         | false         | When set to true the image will be constrained to aspect ratio 1:1 and centered. |
 | outputType    | image/jpeg    | Can be set to any mimetype supported by `<canvas>`. |
 | outputQuality | 0.7           | Smaller values result in smaller file sizes. |
-| outputBlob    | false         | When set to true the function will resolve with a Blob containing the thumbnail, otherwise it'll resolve with a data URI. |
-
-The function returns a promise that resolves to either a Blob or a data URI based on the `outputBlob` argument.
 
 ## Installation
 
