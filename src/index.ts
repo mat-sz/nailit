@@ -21,7 +21,7 @@ export interface NailItOptions {
     /**
      * Quality of the output. Default: 0.7.
      */
-    outputQuality?: boolean,
+    outputQuality?: number,
 }
 
 /**
