@@ -1,3 +1,7 @@
+# DEPRECATED: Use [imtool](https://github.com/mat-sz/imtool) instead.
+
+----
+
 # nailIt
 
 Easily generate thumbnails on the client-side. Works well with React. TypeScript is supported.
